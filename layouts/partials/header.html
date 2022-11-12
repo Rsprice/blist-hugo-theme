@@ -1,7 +1,7 @@
 <header class="container flex justify-between md:justify-between gap-4 flex-wrap p-6 mx-auto relative">
   <a href="{{ .Site.Home.Permalink }}" class="capitalize font-extrabold text-2xl">
     {{ if .Site.Params.logo }}
-   <img src="https://raw.githubusercontent.com/Rsprice/blist-hugo-theme/8d9aa32631d8c7c31e20f3dd06a75b582102a773/images/blist-logo.png" width="69.25px" height="32px" alt="{{ .Site.Title }}" class="h-8 max-w-full" />
+   <img src="{{ .Site.Params.logo }}" width="69.25px" height="32px" alt="{{ .Site.Title }}" class="h-8 max-w-full" />
     {{ else }}
     {{ .Site.Title }}
     {{ end }}
